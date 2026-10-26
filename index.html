@@ -1,20 +1,10 @@
-<!-- 
-Nivel de Alerta: Negro. La extracción del Paquete-Ómega debe completarse en la
-ventana de 02:00h a 02:15h (GMT-5) del 28 de Noviembre. El punto de encuentro
-(Drop Zone Gamma) se ha reubicado a la ubicación $40.7128, -74.0060$. El Agente
-32.A utilizará el acceso secundario (protocolo 'Fantasma') y debe confirmar que
-el archivo con hash SHA-256 A4E3B9F2 está completamente borrado del
-Servidor-Nexo. La clave de respaldo para la decodificación del archivo es la
-frase 'SolNegro_55'. Destruye este mensaje después de la confirmación de
-lectura.
--->
-
+﻿
 <!DOCTYPE html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cifrado Asimétrico RSA</title>
+    <title>Cifrado AsimÃ©trico RSA</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -38,10 +28,10 @@ lectura.
     </script>
   </head>
   <body
-    class="bg-gradient-to-br from-gray-50 to-blue-50 min-h-screen font-sans antialiased"
+    class="bg-gray-50 min-h-screen font-sans antialiased"
   >
     <!-- Navigation -->
-    <nav class="bg-primary shadow-xl backdrop-blur-sm">
+    <nav class="bg-primary  backdrop-blur-sm">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-center justify-between py-4 md:py-6">
           <div class="flex items-center space-x-3 md:space-x-6">
@@ -49,21 +39,21 @@ lectura.
               <img
                 src="images/tescologo.png"
                 alt="Logo Escuela 1"
-                class="h-8 md:h-16 lg:h-20 w-auto object-contain hover:scale-105 transition-transform duration-300"
+                class="h-8 md:h-16 lg:h-20 w-auto object-contain  transition-transform duration-300"
               />
               <img
                 src="images/siclogo.png"
                 alt="Logo Escuela 2"
-                class="h-10 md:h-16 lg:h-16 w-auto object-contain hover:scale-105 transition-transform duration-300"
+                class="h-10 md:h-16 lg:h-16 w-auto object-contain  transition-transform duration-300"
               />
             </div>
           </div>
           <h1
             class="text-white text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold flex-1 text-center tracking-tight"
           >
-            <span class="hidden sm:inline">Cifrado Asimétrico</span>
+            <span class="hidden sm:inline">Cifrado AsimÃ©trico</span>
             <span class="sm:hidden">Cifrado</span>
-            <span class="text-blue-200 ml-1 md:ml-2">RSA</span>
+            <span class="text-gray-400 ml-1 md:ml-2">RSA</span>
           </h1>
           <div class="w-12 md:w-16 lg:w-24"></div>
         </div>
@@ -78,7 +68,7 @@ lectura.
       >
         <div class="flex items-center group">
           <div
-            class="w-10 h-10 md:w-12 md:h-12 bg-gradient-to-br from-primary to-blue-700 text-white rounded-xl flex items-center justify-center font-bold mr-3 md:mr-4 shadow-lg group-hover:scale-110 transition-transform duration-300"
+            class="w-10 h-10 md:w-12 md:h-12 bg-primary text-white rounded-md flex items-center justify-center font-bold mr-3 md:mr-4  group- transition-transform duration-300"
           >
             <span class="text-sm md:text-base">1</span>
           </div>
@@ -90,7 +80,7 @@ lectura.
         <div class="hidden sm:block w-8 md:w-16 h-0.5 bg-primary/40"></div>
         <div class="flex items-center group">
           <div
-            class="w-10 h-10 md:w-12 md:h-12 bg-gradient-to-br from-primary to-blue-700 text-white rounded-xl flex items-center justify-center font-bold mr-3 md:mr-4 shadow-lg group-hover:scale-110 transition-transform duration-300"
+            class="w-10 h-10 md:w-12 md:h-12 bg-primary text-white rounded-md flex items-center justify-center font-bold mr-3 md:mr-4  group- transition-transform duration-300"
           >
             <span class="text-sm md:text-base">2</span>
           </div>
@@ -102,7 +92,7 @@ lectura.
         <div class="hidden sm:block w-8 md:w-16 h-0.5 bg-primary/40"></div>
         <div class="flex items-center group">
           <div
-            class="w-10 h-10 md:w-12 md:h-12 bg-gradient-to-br from-primary to-blue-700 text-white rounded-xl flex items-center justify-center font-bold mr-3 md:mr-4 shadow-lg group-hover:scale-110 transition-transform duration-300"
+            class="w-10 h-10 md:w-12 md:h-12 bg-primary text-white rounded-md flex items-center justify-center font-bold mr-3 md:mr-4  group- transition-transform duration-300"
           >
             <span class="text-sm md:text-base">3</span>
           </div>
@@ -117,11 +107,11 @@ lectura.
       <div class="space-y-6 md:space-y-8 lg:space-y-10">
         <!-- Step 1: Generate Keys -->
         <div
-          class="bg-white/90 backdrop-blur-sm border border-primary/20 rounded-2xl p-6 md:p-8 shadow-xl hover:shadow-2xl transition-all duration-300"
+          class="bg-white/90 backdrop-blur-sm border border-primary/20 rounded-2xl p-6 md:p-8  hover:shadow-2xl transition-all duration-300"
         >
           <div class="flex items-center mb-6 md:mb-8">
             <div
-              class="w-12 h-12 md:w-14 md:h-14 bg-gradient-to-br from-primary to-blue-700 text-white rounded-xl flex items-center justify-center font-bold mr-4 md:mr-6 shadow-lg"
+              class="w-12 h-12 md:w-14 md:h-14 bg-primary text-white rounded-md flex items-center justify-center font-bold mr-4 md:mr-6 "
             >
               <span class="text-lg md:text-xl">1</span>
             </div>
@@ -133,7 +123,7 @@ lectura.
           </div>
 
           <p class="text-gray-600 mb-6">
-            Genera un par de claves pública y privada RSA de 2048 bits para
+            Genera un par de claves pÃºblica y privada RSA de 2048 bits para
             cifrado seguro
           </p>
 
@@ -165,7 +155,7 @@ lectura.
                   clip-rule="evenodd"
                 />
               </svg>
-              <span>Clave Pública</span>
+              <span>Clave PÃºblica</span>
             </a>
             <a
               id="privDownload"
@@ -184,7 +174,7 @@ lectura.
         </div>
 
         <!-- Step 2: Encrypt -->
-        <div class="bg-white border-2 border-primary rounded-xl p-6 shadow-sm">
+        <div class="bg-white border-2 border-primary rounded-md p-6 shadow-sm">
           <div class="flex items-center mb-6">
             <div
               class="w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center font-bold mr-4"
@@ -197,7 +187,7 @@ lectura.
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
             <div>
               <label class="block text-primary font-semibold mb-3"
-                >Cargar Clave Pública</label
+                >Cargar Clave PÃºblica</label
               >
               <input
                 type="file"
@@ -213,7 +203,7 @@ lectura.
                 id="mensaje"
                 rows="6"
                 class="w-full px-4 py-3 border-2 border-primary rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-300 resize-none"
-                placeholder="Escribe tu mensaje aquí..."
+                placeholder="Escribe tu mensaje aquÃ­..."
               ></textarea>
 
               <button
@@ -240,7 +230,7 @@ lectura.
                 rows="8"
                 readonly
                 class="w-full px-4 py-3 bg-gray-50 border-2 border-gray-300 rounded-lg font-mono text-sm resize-none"
-                placeholder="El mensaje cifrado aparecerá aquí..."
+                placeholder="El mensaje cifrado aparecerÃ¡ aquÃ­..."
               ></textarea>
               <div id="emailSection" class="hidden mt-4">
                 <label class="block text-primary font-semibold mb-2"
@@ -254,7 +244,7 @@ lectura.
                 />
                 <button
                   onclick="enviarPorCorreo()"
-                  class="w-full bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 flex items-center justify-center space-x-2"
+                  class="w-full bg-gray-700 hover:bg-green-600 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 flex items-center justify-center space-x-2"
                 >
                   <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                     <path
@@ -272,7 +262,7 @@ lectura.
         </div>
 
         <!-- Step 3: Decrypt -->
-        <div class="bg-white border-2 border-primary rounded-xl p-6 shadow-sm">
+        <div class="bg-white border-2 border-primary rounded-md p-6 shadow-sm">
           <div class="flex items-center mb-6">
             <div
               class="w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center font-bold mr-4"
@@ -301,7 +291,7 @@ lectura.
                 id="cipherInput"
                 rows="6"
                 class="w-full px-4 py-3 border-2 border-primary rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-300 font-mono text-sm resize-none"
-                placeholder="Pega el mensaje cifrado aquí..."
+                placeholder="Pega el mensaje cifrado aquÃ­..."
               ></textarea>
 
               <button
@@ -328,7 +318,7 @@ lectura.
                 rows="10"
                 readonly
                 class="w-full px-4 py-3 bg-gray-50 border-2 border-gray-300 rounded-lg resize-none"
-                placeholder="El mensaje descifrado aparecerá aquí..."
+                placeholder="El mensaje descifrado aparecerÃ¡ aquÃ­..."
               ></textarea>
             </div>
           </div>
@@ -340,7 +330,7 @@ lectura.
     <footer class="bg-primary text-white py-6 mt-12">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <p class="text-sm md:text-base">
-          © 2025 Cifrado Asimétrico RSA - Desarrollado para fines educativos
+          Â© 2025 Cifrado AsimÃ©trico RSA - Desarrollado para fines educativos
         </p>
       </div>
     </footer>
@@ -407,9 +397,9 @@ lectura.
             true,
             ["encrypt"]
           );
-          showNotification("Clave pública cargada", "success");
+          showNotification("Clave pÃºblica cargada", "success");
         } catch (error) {
-          showNotification("Error al cargar clave pública", "error");
+          showNotification("Error al cargar clave pÃºblica", "error");
         }
       };
 
@@ -432,7 +422,7 @@ lectura.
 
       async function cifrar() {
         if (!publicKey)
-          return showNotification("Carga la clave pública primero", "error");
+          return showNotification("Carga la clave pÃºblica primero", "error");
 
         try {
           const mensaje = document.getElementById("mensaje").value;
@@ -541,8 +531,8 @@ lectura.
 
       function showNotification(message, type) {
         const notification = document.createElement("div");
-        notification.className = `fixed top-4 right-4 z-50 px-6 py-3 rounded-lg shadow-lg text-white font-medium transform transition-all duration-300 translate-x-full ${
-          type === "success" ? "bg-green-500" : "bg-red-500"
+        notification.className = `fixed top-4 right-4 z-50 px-6 py-3 rounded-lg  text-white font-medium transform transition-all duration-300 translate-x-full ${
+          type === "success" ? "bg-gray-700" : "bg-gray-700"
         }`;
         notification.textContent = message;
         document.body.appendChild(notification);
@@ -587,7 +577,7 @@ lectura.
           formData.append("_captcha", "false");
           formData.append(
             "mensaje",
-            `Hola,\n\nTe envío un mensaje cifrado usando RSA.\n\nMensaje cifrado:\n${mensajeCifrado}\n\nLa clave privada está adjunta como archivo JSON.\n\nInstrucciones:\n1. Descarga el archivo adjunto 'clave_privada.json'\n2. Ve a la aplicación de cifrado\n3. Carga la clave privada\n4. Pega el mensaje cifrado\n5. Haz clic en Descifrar\n\nSaludos`
+            `Hola,\n\nTe envÃ­o un mensaje cifrado usando RSA.\n\nMensaje cifrado:\n${mensajeCifrado}\n\nLa clave privada estÃ¡ adjunta como archivo JSON.\n\nInstrucciones:\n1. Descarga el archivo adjunto 'clave_privada.json'\n2. Ve a la aplicaciÃ³n de cifrado\n3. Carga la clave privada\n4. Pega el mensaje cifrado\n5. Haz clic en Descifrar\n\nSaludos`
           );
           formData.append("attachment", claveFile);
 
@@ -608,9 +598,9 @@ lectura.
         } catch (error) {
           // Fallback a mailto
           const asunto = "Mensaje Cifrado RSA";
-          const cuerpo = `Hola,\n\nTe envío un mensaje cifrado usando RSA.\n\n=== MENSAJE CIFRADO ===\n${mensajeCifrado}\n\n=== CLAVE PRIVADA JSON ===\n${
+          const cuerpo = `Hola,\n\nTe envÃ­o un mensaje cifrado usando RSA.\n\n=== MENSAJE CIFRADO ===\n${mensajeCifrado}\n\n=== CLAVE PRIVADA JSON ===\n${
             clavePrivadaTexto || "No disponible"
-          }\n\n=== INSTRUCCIONES ===\n1. Copia la clave privada JSON\n2. Guárdala como 'clave_privada.json'\n3. Usa la aplicación para descifrar\n\nSaludos`;
+          }\n\n=== INSTRUCCIONES ===\n1. Copia la clave privada JSON\n2. GuÃ¡rdala como 'clave_privada.json'\n3. Usa la aplicaciÃ³n para descifrar\n\nSaludos`;
 
           const mailtoLink = `mailto:${emailDestinatario}?subject=${encodeURIComponent(
             asunto
@@ -623,3 +613,4 @@ lectura.
     </script>
   </body>
 </html>
+
