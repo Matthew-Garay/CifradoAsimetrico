@@ -1,83 +1,65 @@
-<div align="center">
+# Cifrado Asimetrico RSA
 
-# Cifrado Asimétrico (RSA)
+## A. Titulo del Proyecto y Resumen Ejecutivo
 
-**Página web que demuestra el cifrado asimétrico** mediante la generación de claves RSA, cifrado con la clave pública y descifrado con la privada.
+Cifrado Asimetrico RSA es una aplicacion web de un solo archivo que demuestra el principio del cifrado asimetrico mediante la generacion de un par de claves RSA, el cifrado de un mensaje con la clave publica y el descifrado con la clave privada. El problema que resuelve es ilustrar de forma educativa como dos partes pueden comunicarse de forma confidencial sin compartir la clave secreta, utilizando la Web Crypto API del navegador. Su alcance tecnologico se limita al entorno del navegador; no requiere servidor, ni base de datos, ni almacenamiento persistente.
 
-[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square)]()
-[![Web Crypto API](https://img.shields.io/badge/Web%20Crypto%20API-RSA-2ea44f?style=flat-square)]()
-[![TailwindCSS](https://img.shields.io/badge/TailwindCSS-38B2AC?style=flat-square)](https://tailwindcss.com/)
+## B. Arquitectura del Sistema
 
-</div>
+La aplicacion sigue una arquitectura de cliente puro (client-side only). Toda la logica de criptografia se ejecuta dentro del navegador del usuario utilizando la Web Crypto API nativa. El flujo de datos comienza con la generacion de un par de claves RSA (publica y privada) almacenadas en memoria del navegador, continua con el cifrado de un mensaje de texto utilizando la clave publica y finaliza con el descifrado del mensaje cifrado utilizando la clave privada. No existe comunicacion con servidores externos ni almacenamiento en disco, salvo la opcion de exportar las claves en formato JWK como archivos JSON descargables por el usuario.
 
----
+## C. Caracteristicas Tecnicas Clave
 
-## Descripción
+- Generacion de claves RSA mediante la Web Crypto API del navegador (algoritmo RSA-OAEP).
+- Cifrado de mensajes con la clave pública y descifrado con la clave privada, todo en el lado del cliente.
+- Exportacion e importacion de claves en formato JWK (JSON Web Key) como archivos .json descargables.
+- Interfaz de usuario responsiva construida con HTML5 y TailwindCSS mediante CDN.
+- Ausencia de servidor, base de datos, persistencia de datos o almacenamiento en sesion.
+- No utiliza mecanismos de concurrencia, procesamiento en tiempo real ni protocolos de red propios.
+- Seguridad limitada al ambito del navegador; la clave privada se descarga en texto plano y es responsabilidad del usuario su custodia.
 
-Aplicación web **100% del lado del cliente** que demuestra el principio del **cifrado asimétrico** en un entorno controlado: genera un par de claves **RSA**, cifra un mensaje con la clave pública y lo descifra con la clave privada.
+## D. Especificacion del Stack Tecnologico
 
-Está pensada como material educativo para ilustrar cómo dos partes pueden comunicarse de forma confidencial sin compartir la clave secreta. **No requiere servidor ni base de datos.**
+| Categoria | Tecnologia / Librería |
+|-----------|----------------------|
+| Frontend | HTML5, JavaScript (Web Crypto API), TailwindCSS (CDN) |
+| Criptografia | RSA-OAEP (Web Crypto API) |
+| Navegador | Chrome, Edge, Firefox, Safari con soporte de Web Crypto API |
 
-## Características
+## E. Guia de Instalacion, Configuracion y Despliegue
 
-- **Generación de claves RSA** con la **Web Crypto API** del navegador.
-- **Cifrado** con la clave pública y **descifrado** con la clave privada.
-- **Exportación e importación** de claves en formato **JWK** (descargables como `.json`).
-- Interfaz responsiva con **TailwindCSS**.
-- Todo ocurre en el navegador: sin servidor ni almacenamiento.
+### Requisitos previos del sistema
 
-## Tecnologías utilizadas
+- Navegador moderno con soporte de Web Crypto API (Chrome, Edge, Firefox, Safari).
+- Opcional: servidor HTTP local (por ejemplo, Python) si el navegador bloquea la API de criptografia al abrir el archivo directamente.
 
-- **Frontend:** HTML5, JavaScript (Web Crypto API), TailwindCSS (CDN)
-- **Criptografía:** RSA-OAEP (Web Crypto API)
-
-## Requisitos previos
-
-- Navegador moderno con soporte de **Web Crypto API** (Chrome, Edge, Firefox, Safari).
-- Opcional: servidor HTTP local si el navegador bloquea la criptografía al abrir el archivo directamente.
-
-## Instalación
-
-Es un archivo único; no requiere instalación.
+### Secuencia de comandos para clonacion e instalacion
 
 ```bash
 git clone https://github.com/Matthew-Garay/CifradoAsimetrico.git
 cd CifradoAsimetrico
 ```
 
-Abre `index.html` con doble clic. Si el navegador bloquea la API de criptografía, sírvelo por HTTP:
+### Configuracion de variables de entorno
+
+Este proyecto no requiere archivo .env ni variables de entorno.
+
+### Comandos para ejecucion en entorno de Desarrollo
+
+Abrir el archivo `index.html` con doble clic en el navegador. Si el navegador bloquea la API de criptografia, servir el archivo por HTTP local:
 
 ```bash
 python -m http.server 8000
-# Abre http://localhost:8000
 ```
 
-## Uso
+Luego abrir `http://localhost:8000` en el navegador.
 
-1. **Generar claves** — descarga los dos archivos `.json` (pública y privada).
-2. **Cifrar** — pega la clave pública y escribe el mensaje.
-3. **Descifrar** — pega la clave privada y el mensaje cifrado.
+### Comandos para ejecucion en entorno de Produccion
 
-## Estructura del proyecto
+No aplica entorno de produccion separado; es una aplicacion de un solo archivo ejecutada en el navegador del cliente.
 
-```
-CifradoAsimetrico/
-├── index.html           # Aplicación completa (HTML + CSS + JS)
-├── images/
-│   ├── siclogo.png
-│   └── tescologo.png
-└── README.md
-```
+## F. Creditos de Autoría
 
-## Advertencia
-
-Proyecto **educativo**. La clave privada se descarga en texto plano: **no la subas a ningún lado** ni la compartas.
-
-## Licencia
-
-Proyecto académico y educativo; puedes usarlo libremente con fines de aprendizaje.
-
-## Autor
-
-**Matthew Garay** — [GitHub](https://github.com/Matthew-Garay)
+Desarrollado por: Matthew Ilveneff Garay Pérez
+Correo Electronico: 1911.garay.perez@gmail.com
 
