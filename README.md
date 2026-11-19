@@ -1,5 +1,9 @@
 # Cifrado Asimetrico RSA
 
+**[Probar la demo en línea](https://matthew-garay.github.io/CifradoAsimetrico/)**
+
+![Captura de Cifrado Asimetrico RSA](docs/captura.png)
+
 ## A. Titulo del Proyecto y Resumen Ejecutivo
 
 Cifrado Asimetrico RSA es una aplicacion web de un solo archivo que demuestra el principio del cifrado asimetrico mediante la generacion de un par de claves RSA, el cifrado de un mensaje con la clave publica y el descifrado con la clave privada. El problema que resuelve es ilustrar de forma educativa como dos partes pueden comunicarse de forma confidencial sin compartir la clave secreta, utilizando la Web Crypto API del navegador. Su alcance tecnologico se limita al entorno del navegador; no requiere servidor, ni base de datos, ni almacenamiento persistente.
